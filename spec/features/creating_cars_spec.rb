@@ -13,6 +13,8 @@ feature 'Creating Cars' do
 
     click_button 'Create Car'
 
+    # screenshot_and_open_image
+
     expect(page).to have_content("1969 Ford Mustang created")
     expect(page).to have_content("$2,300.00")
   end
